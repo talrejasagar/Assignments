@@ -1,4 +1,4 @@
-//way 1 
+//Factorial way 1
 
 function fact(x) {
   if (x === 0) {
@@ -16,8 +16,7 @@ if (z > 0) {
   console.log("Not a positive no.");
 }
 
-
-//Way 2
+//Factorial Way 2
 
 var i = 1;
 var z = 1;
@@ -32,10 +31,61 @@ function fact(number) {
 fact(5);
 console.log(z);
 
-// using loop
+//Factorial using loop
 
 var z = 1;
 for (var i = 1; i <= 5; i++) {
   z = z * i;
 }
 console.log(z);
+
+// Counting of number
+var i = 0;
+function count(z) {
+  i++;
+  if (i <= z) {
+    console.log(i);
+    count(z);
+  }
+}
+count(10);
+
+//  Reverse Counting of number
+function countd(z) {
+  var i = z;
+  z--;
+
+  if (z >= 0) {
+    console.log(i);
+    countd(z);
+  }
+}
+
+countd(100);
+
+// Print even No.
+var i = 0;
+function even(z) {
+  i++;
+  if (i <= z) {
+    if (i % 2 === 0) {
+      console.log(i);
+    }
+    even(z);
+  }
+}
+even(10);
+
+// Print odd No.
+
+var i = 0;
+function odd(z) {
+  i++;
+  if (i <= z) {
+    if (i % 2 !== 0) {
+      console.log(i);
+    }
+    odd(z);
+  }
+}
+odd(10);
