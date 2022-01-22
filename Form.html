@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .reg {
+        padding: 10px;
+        border: 2px dotted black;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px dotted silver;
+        padding: 5px;
+      }
+      #header {
+          background-color: black;
+      }
+      #header h1 {
+        color: #FFF;
+        
+        font-size: 1.3em
+    }
+    .name {
+        margin-top: 5px;
+    }
+
+      #sub input {
+        border-radius: 2px;
+        background-color: aquamarine;
+        border: none;
+        height: 30px;
+        width: 80px;
+        font-size: large;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+
+    <form class="reg">
+        <div id="header">
+            <h1 style="border: 1px solid black; font-size: 2.5em">
+              Registration Form
+            </h1>
+          </div>
+      <div class="name">
+        <label for="first">First Name</label>
+        <input type="text" placeholder="Enter First Name" id="first" value="" />
+      </div>
+      <div class="name">
+        <label for="last">Last Name</label>
+        <input type="text" placeholder="Enter Last Name" id="last" value="" />
+      </div>
+      <div id="gender">
+        <label>Gender</label>
+        <input type="radio" id="male" value="Male" name="gender" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="Female" name="gender" />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <label for="education">Education</label>
+        <select id="education" placeholder="Education">
+          <option value="10th">10th</option>
+          <option value="12th">12th</option>
+          <option value="graduate">Graduate</option>
+          <option value="post-graduate">Post Graduate</option>
+        </select>
+      </div>
+      <div>
+        <label>Vehicle Owned</label><br />
+        <input type="checkbox" id="2w" value="Bike" />
+        <label for="2w">Bike</label>
+        <input type="checkbox" id="scooter" value="scooter" />
+        <label for="scooter">Scooter</label>
+        <input type="checkbox" id="car" value="car" />
+        <label for="car">Car</label>
+      </div>
+      <div>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" value="" />
+      </div>
+      <div>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" value="" />
+      </div>
+      <div>
+        <label for="income">Annual Income</label>
+        <input type="number" id="income" placeholder="Annual Income" value="" />
+      </div>
+      <div id="sub" style="justify-content: center">
+        <input type="submit" placeholder="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
