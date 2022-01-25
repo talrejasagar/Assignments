@@ -1,0 +1,15 @@
+#second {
+    border: 2px dotted black;
+}
+
+#third{
+    font-size: 5em;
+    background-color: azure;
+    width: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    border: 2px solid black;
+    padding: none;
+    
+
+}
